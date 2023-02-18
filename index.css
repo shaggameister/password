@@ -1,0 +1,76 @@
+body {
+    margin: 50px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    background-image: radial-gradient(red, black);
+    background-attachment: fixed;
+}
+
+.main {
+    width: 550px;
+    height: 460px;
+    margin: auto;
+    color: white;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+h1 {
+    font-size: 48px;
+    margin: 50px auto 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight:  normal;
+    margin-top: 5px;
+    color: red;
+}
+
+input {
+    width: 50px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold
+}
+
+/* .lenght {
+    display: block;
+    flex-direction: row;
+} */
+
+button {
+    font-weight: bold;
+    color: white;
+    background: green;
+    margin: 20px auto;
+    padding: 10px 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+hr {
+    width: 500px;
+    border: 1px solid red;
+}
+
+.pw-list {
+    display: flex;
+    justify-content: center;
+}
+
+
+.pw {
+    height: 30px;
+    width: 210px;
+    color: black;
+    background-color: white;
+    margin: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 6px;
+}

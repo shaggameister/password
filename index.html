@@ -1,0 +1,28 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <div>
+                <h1> Password Generator</h1>
+                <h2>Never use an unsecure password again</h2>
+            </div>
+            <div id="length">
+                <p>Enter the number of characters that you<br> would like to use for your password<br> &#40;between 6 and 15&#41;</p>
+                <input id="pw-length" type="number" min="6" max="15">
+            </div>
+            <button id="gen-btn">Generate Password</button>
+            <hr>
+            <div class="pw-list">
+                <p class="pw" id="pw-el-one"></p>
+                <p class="pw" id="pw-el-two"></p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
+

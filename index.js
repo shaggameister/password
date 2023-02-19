@@ -117,19 +117,19 @@ function getRandomChar() {
 }
 
 function genRandomPW() {
-  let randomPW = 10;
-  // let pwLenght = document.getElementById("pw-length").value
-  //
-  // if ( pwLenght > 15 ) {
-  //     pwElOne.textContent = "OUT OF RANGE"
-  //     pwElTwo.textContent = "OUT OF RANGE"
-  // } else if ( pwLenght < 6 ) {
-  //     pwElOne.textContent = "OUT OF RANGE"
-  //     pwElTwo.textContent = "OUT OF RANGE"
-  // } else {
-  for (let i = 0; i < 10; i++) {
-    randomPW += characters[getRandomChar()];
-    // }
+  let randomPW = "";
+  let pwLenght = document.getElementById("pw-length").value;
+
+  if (pwLenght > 15) {
+    randomPW = "OUT OF RANGE";
+    return randomPW;
+  } else if (pwLenght < 6) {
+    randomPW = "OUT OF RANGE";
+    return randomPW;
+  } else {
+    for (let i = 0; i < pwLenght; i++) {
+      randomPW += characters[getRandomChar()];
+    }
+    return randomPW;
   }
-  return randomPW;
 }
